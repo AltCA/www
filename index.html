@@ -55,15 +55,13 @@
       <p>This project is in an early experimental stage. Everything related to this project is subject to change at any time. Our current <a href="https://github.com/AltCA/roots">root CA certificates</a> are <i>temporary</i>, will expire in August 2013 and will be replaced before that.
 	When that happens, all CSRs will have to be re-processed with the new root CAs, and all software signed with previously issued certificates must be re-signed.
       <h1>If you're a user</h1>
-      <p>AltCA.org is an alternate source of trust for Mac OS X Gatekeeper. Using our simple <strike>installer</strike> <a href="https://github.com/AltCA/setup/blob/master/setup.sh">shell script</a> you can configure Gatekeeper to
+      <p>AltCA.org is an alternate source of trust for Mac OS X Gatekeeper. Using our simple installer you can configure Gatekeeper to
 	trust certificates issued by us in addition to those issued by Apple. This gives you greater choice in what software you want
 	to install on your computer, without giving up all the benefits of Gatekeeper and code signing.
       </p>
       <p>
-	If you're willing to trust us (which you probably shouldn't at this point, unless you know <a href="http://dll.nu/">me</a> personally), run the following command in Terminal as an admin user to install our certificates using the above-mentioned shell script (you'll be asked for your password to authorize changing the system security policy):<br>
-	<code>
-	  curl 'https://raw.github.com/AltCA/setup/master/setup.sh' | bash
-	</code>
+	If you're willing to trust AltCA.org (which you probably shouldn't at this point, unless you know <a href="http://dll.nu/">me</a> personally),
+	<a href="AltCA.pkg">download and run the installer</a> and your system will be set up to accept apps signed by AltCA.org in just a few seconds.
       </p>
       <h1>If you're a developer</h1>
       <p>AltCA.org is an alternate certificate authority for Mac OS X Gatekeeper. If you are a free/open source software developer we will
