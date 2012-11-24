@@ -63,6 +63,15 @@
 	If you're willing to trust AltCA.org (which you probably shouldn't at this point, unless you know <a href="http://dll.nu/">me</a> personally),
 	<a href="AltCA.pkg">download and run the installer</a> and your system will be set up to accept apps signed by AltCA.org in just a few seconds.
       </p>
+      <h1>To uninstall</h1>
+      <p>
+	To uninstall, simply open Terminal and type:
+	<code>
+	  sudo /opt/AltCa/bin/uninstall.sh
+	</code>
+	<br>
+	The uninstaller script will remove all AltCA.org certificates and the corresponding rules in the Gatekeeper security policy.
+      </p>
       <h1>If you're a developer</h1>
       <p>AltCA.org is an alternate certificate authority for Mac OS X Gatekeeper. If you are a free/open source software developer we will
 	issue code signing certificates for free. Currently we issue certificates to people with a GitHub account and a proven track record
